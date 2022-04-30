@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__title">Make an appointment</div>
+					<form action="#">
+						<div class="appointment__forms forms">
+							<input autocomplete="off" placeholder="Name" name="username" type="text" class="forms__input">
+							<input autocomplete="off" placeholder="Email" name="email" type="email" class="forms__input">
+							<input autocomplete="off" placeholder="Phone number" name="phone" type="tel" class="forms__input">
+							<select name="select" class="forms__input">
+								<option value="1">Select service</option>
+								<option value="2">Cat</option>
+								<option value="3">Dog</option>
+							</select>
+							<textarea name="text" autocomplete="off" class="forms__input-text"
+								placeholder="Tell us about your puppers include his/her name"></textarea>
+							<button class="forms__button" type="submit">Make an appointment</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<div class="block-title">
+						<div class="block-title__main-title">Summary</div>
+						<div class="block-title__subtitle">Estimate Shipping and Tax</div>
+						<div class="block-title__title">Enter your destination to get a shipping estimate.</div>
+					</div>
+					<form action="#">
+						<div class="summary__forms form1">
+							<label for="country" class="form1__country-label">Country</label>
+							<select class="select" id="country" name="country">
+								<option value="1">Australia</option>
+								<option value="2">Brasil</option>
+								<option value="3">France</option>
+								<option value="4">United states</option>
+							</select>
+							<label for="state" class="form1__state-label">State/Province</label>
+							<input id="state" autocomplete="off" name="state" type="text" class="form1__input">
+							<label for="zip" class="form1__zip-label">Zip/Postal code</label>
+							<input id="zip" autocomplete="off" name="zip" type="text" class="form1__input">
+							<div class="form1__rate-container">
+								<div class="form1__rate-item">Standard Rate</div>
+								<input id="rate" class="form1__rate-input" checked name="rate" value="standart" type="radio">
+								<label for="rate" class="form1__rate-label">Price may vary depending on the item/destination.
+									Shop Staff will contact you. $21.00</label>
+								<div class="form1__rate-item">Pickup from store</div>
+								<input id="rate2" class="form1__rate-input" name="rate" value="picup" type="radio">
+								<label for="rate2" class="form1__rate-label">1234 Street Adress City Address, 1234 $0.00</label>
+							</div>
+						</div>
+					</form>
+					<form action="#">
+						<div class="apply">Apply Discount Code</div>
+						<label for="code" class="summary__discount">Enter discount code</label>
+						<input id="code" autocomplete="off" placeholder="Enter discount code" name="code" type="text"
+							class="summary__input">
+						<button class="summary__button" type="submit">Apply discount</button>
+					</form>
+				</div>
+			</div>
+			<div class="login">
+				<div class="login__container">
+					<div class="login__title">
+						<div class="login__title-first">Registered Customers</div>
+						<div class="login__title-second">If you have an account, sign in with your email address.</div>
+					</div>
+					<form action="#">
+						<div class="login__container-block">
+							<label for="login" class="login__email-label">Email</label>
+							<input id="login" autocomplete="off" placeholder="Your name" name="email" type="text"
+								class="login__input">
+							<label for="pasword" class="login__pasword-label">Pasword</label>
+							<input id="pasword" autocomplete="off" placeholder="Your name" name="pasword" type="text"
+								class="login__input">
+						</div>
+						<div class="login__buttons">
+							<button class="login__button" type="submit">Sign In</button>
+							<button class="login__button-two" type="submit">Forgot Your Password?</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
